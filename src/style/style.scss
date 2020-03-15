@@ -1,0 +1,21 @@
+$bg-content: #f8f8f6;
+// 背景色
+.content{
+    margin-top: 46px;
+    overflow: hidden;
+  }
+  
+  .bg-content{
+    background:$bg-content ;
+    overflow: hidden;
+  }
+  // tooltip 弹层
+  .wrap-tooltip {
+    position: fixed;
+    z-index: -99;
+    background: rgba(0, 0, 0, 0);
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
