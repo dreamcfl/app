@@ -1,8 +1,24 @@
+const autoprefixer = require('autoprefixer');
+const pxtorem = require('postcss-pxtorem');
 const path = require("path");
 const resolve = function(dir) {
   return path.join(__dirname, dir);
 };
 module.exports = {
+  // rem单位适配
+  css: {
+    loaderOptions: {
+    postcss: {
+        plugins: [
+        autoprefixer(),
+        pxtorem({
+            rootValue: 37.5,
+            propList: ['*']
+        })
+        ]
+    }
+    }
+},
   publicPath: process.env.NODE_ENV === "production" ? "./" : "./",
   outputDir: "dist",
   assetsDir: "static",
@@ -31,12 +47,15 @@ module.exports = {
     },
     /* 跨域代理 */
     proxy: {
-      [process.env.VUE_APP_BASE_API]: {
-        target: process.env.VUE_APP_BASE_API,
+      "/api": {
+        /* 目标代理服务器地址 */
+        // target: "http://m260048y71.zicp.vip", //
+        target: "http://192.168.1.118:8888", //
+        /* 允许跨域 */
         changeOrigin: true,
-        secure: false,
+        ws: true,
         pathRewrite: {
-          ["^" + process.env.VUE_APP_BASE_API]: ""
+          "^/api": ""
         }
       }
     }
