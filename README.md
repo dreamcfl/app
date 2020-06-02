@@ -31,6 +31,6 @@ npm run build
 ```
 
  ### 项目演示地址
- <a href="https://github.com/dreamcfl/app" target="_blank">
-   https://github.com/dreamcfl/app
+ <a href="https://github.com/dreamcfl/app/dist/" target="_blank">
+   https://github.com/dreamcfl/app/dist/
     </a>
