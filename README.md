@@ -15,10 +15,22 @@ npm run serve
 npm run build
 ```
 
-### Lints and fixes files
+#### 技术栈使用：
 ```
-npm run lint
+ vue-cli@3.0、vue-router、vuex、axios、vantUI@2.6.2、sass、eslint、amfe-flexible
+
+```
+### 博客地址
+ <a href="http://chenfl.top" target="_blank">
+
+
+ ### 项目功能介绍
+```
+ 登录、密码框内容隐藏显示、底部导航、上部导航实现后退，更多、图片可放大，富文本内容显示等基本功能
+
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+ ### 项目演示地址
+ <a href="https://github.com/dreamcfl/app" target="_blank">
+   https://github.com/dreamcfl/app
+    </a>
