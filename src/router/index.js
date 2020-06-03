@@ -32,13 +32,13 @@ const routes = [
         path: "/about",
         name: "About",
         component: () => import("@v/about")
-      },
-      {
-        path: "/newsDetail",
-        name: "NewsDetail",
-        component: () => import("@v/newsDetail")
       }
     ]
+  },
+  {
+    path: "/newsDetail",
+    name: "NewsDetail",
+    component: () => import("@v/newsDetail")
   },
   {
     path: "/info",

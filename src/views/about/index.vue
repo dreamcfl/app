@@ -76,7 +76,7 @@ export default {
   methods: {
     getData() {},
     goDetail() {
-      this.$router.push({ path: "newsDetail" });
+      this.$router.push({ path: "/newsDetail" });
     }
   }
 };
