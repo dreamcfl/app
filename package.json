@@ -13,7 +13,8 @@
     "vant": "^2.6.2",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
-    "vuex": "^3.0.1"
+    "vuex": "^3.0.1",
+    "webpack-merge": "^4.2.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.11.0",
