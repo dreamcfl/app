@@ -1,4 +1,5 @@
 <template>
+<div class='page'>
     <div class="login-bg">
       <div class="login-logo">
         <img src="../../assets/img/login.jpg" v-if="isLogin" />
@@ -113,6 +114,7 @@
         <div class="txtBox_3">
           <span @click="goLogin">已注册，直接登录</span>
         </div>
+      </div>
       </div>
     </div>
   </template>
@@ -238,6 +240,10 @@
   };
   </script>
   <style scoped lang="scss">
+  .page{
+    min-height:100vh;
+    background:#fff;
+  }
   .login-logo {
     width: 100%;
     img {
